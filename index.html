@@ -1,1 +1,73 @@
-# staff_form
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLSf1DlEAEqgVM_ZZkFuseJ_2V2AFftaQHMJBOi_pqav9qHNqHg/formResponse"
+      id="form"
+      method="post"
+      target="hidden_iframe"
+      onsubmit="submitted=true;"
+    >
+      <div class="label">お名前</div>
+      <input
+        id="form__name"
+        name="entry.430337460"
+        placeholder="お名前"
+        required="required"
+        type="text"
+      />
+      <div class="label">フリガナ</div>
+      <input
+        id="form__name"
+        name="entry.1666165411"
+        placeholder="フリガナ"
+        required="required"
+        type="text"
+      />
+      <div class="label">メールアドレス</div>
+      <input
+        id="form__email"
+        name="entry.165892822"
+        placeholder="メールアドレス"
+        required="required"
+        type="mail"
+      />
+      <div class="label">電話番号</div>
+      <input
+        id="form__email"
+        name="entry.136487559"
+        placeholder="電話番号"
+        type="tel"
+      />
+      <div class="label">生年月日</div>
+      <input id="form__year" name="entry.131426128" placeholder="2023" type="number" />
+      <input id="form__month" name="entry.1910432740" placeholder="01" type="number" />
+      <input id="form__day" name="entry.143758973" placeholder="01" type="number" />
+
+      <div class="label">メッセージ本文</div>
+      <textarea
+        id="form__msg"
+        name="entry.1556189711"
+        placeholder="お問い合わせ内容があればご記入ください"
+      ></textarea>
+
+      <div style="text-align: center">
+        <input id="button" name="button" type="submit" value="送 信" />
+      </div>
+    </form>
+    <script type="text/javascript">
+      var submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="form__hidden_iframe"
+      style="display: none"
+      onload="if(submitted){window.location='thanks.html';}"
+    ></iframe>
+  </body>
+</html>
