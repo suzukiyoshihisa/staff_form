@@ -45,9 +45,27 @@
         type="tel"
       />
       <div class="label">生年月日</div>
-      <input id="form__year" name="entry.131426128" placeholder="2023" type="number" />
-      <input id="form__month" name="entry.1910432740" placeholder="01" type="number" />
-      <input id="form__day" name="entry.143758973" placeholder="01" type="number" />
+      <!-- 生まれた年を設定する　selectタグ -->
+      <select id="form__year" name="entry.131426128">
+        <option value="">----</option>
+        <option value="2020">2020</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+      </select>
+      
+      <!-- 生まれた月を設定する　selectタグ -->
+      <select id="form__month" name="entry.1910432740">
+        <option value="">--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+
+      <!-- 生まれた日を設定する　selectタグ -->
+      <select id="form__day" name="entry.1045781291">
+        <option value="">--</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
 
       <div class="label">メッセージ本文</div>
       <textarea
